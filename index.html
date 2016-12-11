@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html data-dpr="2" style="width:100%;height:100%;overflow:hidden;">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="明略警务专家，开启智慧警务变革,COPA的人工智能辅助">
+    <meta name="keywords" content="明略、警务专家、COPA智能辅助">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>明略警务专家</title>
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/main3.js"></script>
+    <script>
+	UAS = navigator.userAgent.toLowerCase();
+	sw = window.screen.width ;
+	sh = window.screen.height ;
+	if(UAS.indexOf('ucbrowser') > -1 ){
+						sw = sw / 3 ;
+						sh = sh / 3 ;
+	}
+    if(  is_baidu() || is_qq() || is_sogou() ){
+        document.write('<link class="maincss" rel="stylesheet" type="text/css" href="./css/index.css">')
+    }
+    else if( sh< 500 || sw > 766 || UAS.indexOf('mx4') > -1 ){
+        document.write('<link class="maincss" rel="stylesheet" type="text/css" href="./css/i5.css">')
+    }else{
+        document.write('<link class="maincss" rel="stylesheet" type="text/css" href="./css/weixin.css">')
+
+	}
+    </script>
+    <style>
+        html, body {
+        position: relative;
+        height: 100%;
+            }
+        .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+        .swiper-slide{
+                width:100%;
+                height:100%;
+        }
+        /*加载动画*/
+        .index1_loadclass{
+             height: auto;
+             margin: 0 auto;
+             margin-top:6rem;
+             margin-bottom:0.8rem;
+         }
+        .index1_loadclass span{
+             display: inline-block;
+             width: 0.125rem;
+             height: 0.5rem;
+             border-radius: 0.0625rem;
+             background: lightgreen;
+             -webkit-animation: load 0.8s ease infinite;
+             -moz-animation: load 0.8s ease infinite;
+             -o-animation: load 0.8s ease infinite;
+             animation: load 0.8s ease infinite;
+         }
+         @-webkit-keyframes load{
+             0%,100%{
+                -webkit-transform:scaleY(1);
+                background:lightgreen;
+             }
+             50%{
+                 transform:scaleY(2);
+                 background: lightblue;
+             }
+         }
+          @keyframes load{
+             0%,100%{
+                transform:scaleY(1);
+                background:lightgreen;
+             }
+             50%{
+                 transform:scaleY(2);
+                 background: lightblue;
+             }
+         }
+         .index1_loadclass .load2{
+             -webkit-animation-delay:0.2s;
+             animation-delay:0.2s;
+         }
+         .index1_loadclass .load3{
+             -webkit-animation-delay:0.4s;
+             animation-delay:0.4s;
+         }
+         
+         .index1_loadclass .load4{
+             -webkit-animation-delay:0.6s;
+             animation-delay:0.6s;
+         }
+         
+         .index1_loadclass .load5{
+             -webkit-animation-delay:0.8s;
+             animation-delay:0.8s;
+         }
+         
+    </style>
+</head>
+<body>
+  <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide stop-swiping">
+                                    <div class="index1_zhezhao">
+                            <div class="index1_zhezhao_in">
+                                <div class="index1_loadclass">
+                                    <span class="load1"></span>
+                                    <span class="load2"></span>
+                                    <span class="load3"></span>
+                                    <span class="load4"></span>
+                                    <span class="load5"></span>
+                                </div>
+                                <p><span>明略</span>警务专家，开启智慧警务变革</p>
+                                <p>精彩马上呈现...</p>
+                            </div>
+                </div>
+                <script>  
+                    var baseNum = 1;
+                    //小米2
+                    if( ( UAS.indexOf('hm 2a') > -1 && UAS.indexOf('mqqbrowser') > -1 && UAS.indexOf('micromessenger') > -1 ) || 
+                        ( UAS.indexOf('hm 2a') > -1 && UAS.indexOf('mqqbrowser') > -1 && UAS.indexOf('pixel') > -1 ) ||
+						( UAS.indexOf('hm note 1s') > -1 && UAS.indexOf('mqqbrowser') > -1 && UAS.indexOf('micromessenger') > -1 ) ||
+						( UAS.indexOf('hm note 1s') > -1 && UAS.indexOf('mqqbrowser') > -1 && UAS.indexOf('pixel') > -1 ) ||
+						( UAS.indexOf('hm note 1lte') > -1 && UAS.indexOf('mqqbrowser') > -1 && UAS.indexOf('micromessenger') > -1 ) ||
+						( UAS.indexOf('hm note 1lte') > -1 && UAS.indexOf('mqqbrowser') > -1 && UAS.indexOf('pixel') > -1 ) 
+					)	
+					{
+                       baseNum = 0.5 ;
+                    }
+                    var scale = baseNum / devicePixelRatio;
+                    var k = 10;
+                    if( sh < 500 || sw > 766 || UAS.indexOf('mx4') > -1 ){k = 11.5;};
+                    document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+                    document.documentElement.style.fontSize = document.documentElement.clientWidth / k + 'px';
+				</script>
+            </div>
+            <div class="swiper-slide stop-swiping">
+                <div class="section section1" style="background-size:cover;background-repeat:no-repeat">
+                    <div class="index1_top">
+                        <div class="index1_top_info">
+                            <img src="./images/icon1@2x.png" />
+                            <img src="./images/icon2@2x.png" />
+                            <img src="./images/icon3@2x.png"  />
+                            <img src="./images/icon4@2x.png"  />
+                            <img src="./images/icon5@2x.png" />
+                            <img src="./images/icon6@2x.png"  />
+                            <img src="./images/icon7@2x.png"  />
+                            <img src="./images/wenzi@2x.png" />
+                        </div>
+                    </div>
+                    <div class="index1_footer">
+                        <div class="index1_btns">
+                            <div class="index1_btns_in"><a href="javascript:void(0)">点击开启<br/>智慧警务变革</a>
+                            <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="index1_logo"><img src="./images/index1-logo@2x.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide stop-swiping">
+                <div class="section  section2" style="background-size:cover;background-repeat:no-repeat">
+                    <div class="index2_top">
+                        <img src="./images/jingyuan@2x.png" class="index2_jiyuan" onclick="jingyuan()"/>
+                        <div class="index2_top_in ">
+                            <div class="index2_top_re ">
+                                <img class="index2_anniu_scale  index2_xiaoquan" src="./images/dianjianniu@2x.png" onclick="jingyuan()"/>
+                                <div class="index2_line "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index2_btns ">
+                        <div class="index2_btns_in ">
+                            <div class="swiper-button-next "></div>
+                            <a href="javascript:void(0);">点击开始<br/>情报中心警员小张的日常工作</a>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+            <div class="swiper-slide stop-swiping">
+                <div class="section  section3" style="background-size:cover;background-repeat:no-repeat">
+                    <div class="index3_zhezhao">
+                    </div>
+                    <div class="index3_anniu " onclick="f3()">
+                        <img class="index3_anniu_img  index3_anniu_in_scales" src="./images/zhuanpan2_03.png" />
+                    </div>
+                    <span >酒店入住信息</span>
+                    <span >案底记录</span>
+                    <span >手机通话记录</span>
+                    <span >新闻报道</span>
+                    <span >公安局历史<br/>笔录</span>
+                    <span >涉案车辆信息</span>
+                    <span >火车出行记录</span>
+                    <span >公安八大资源库</span>
+                    <span >户籍人口库 </span>
+                    <span >办公地点</span>
+                    <span >卡口记录</span>
+                    <span >家庭住址</span>
+                    <span >取款记录</span>
+                    <span >电子围栏库</span>
+                    <span >看守所记录</span>
+                    <span >110警情库</span>
+                    <span >交易记录</span>
+                    <span >办公室座机<br/>通话记录</span>
+                    <span >飞机出行记录</span>
+                    <!-- 4 -->
+                    <span >办公地点</span>
+                    <span >飞机出行记录</span>
+                    <span >取款记录</span>
+                    <span >户籍人口库</span>
+                    <span >110警情库笔录</span>
+                    <span >电子围栏库</span>
+                    <span >办公地点</span>
+                    <span >办公地点</span>
+                    <span >电子围栏库 </span>
+                    <span >交易记录笔录</span>
+                    <span >新闻报道</span>
+                    <span >新闻报道</span>
+                    <span >取款记录</span>
+                    <span >办公地点</span>
+                    <span >家庭住址 </span>
+                    <span >卡口记录</span>
+                    <span >卡口记录</span>
+                    <span >办公地</span>
+                    <span >办公地点</span>
+                    <span >公安局历史</span>
+                    <span >涉案车辆</span>
+                    <span >点字围栏库</span>
+                    <div class="index3_main ">
+                        <div class="index3_main_in  index3_main_rotate"></div>
+                            <img class="index3_main_in_img " src="./images/xiaohandi@2x.png" />
+                    </div>
+                    <div class="index3_foot " onclick="fhide()"><a href="javascript:void(0);">
+                        <img class="index3_hou_logo " src="./images/index7_zhuan2.png" /></a>
+                        <div class="index3_logo_zhezhao "></div>
+                        <div class="index3_di ">
+                            <div class="index3_inner ">
+                                <img  class="index3_di_line " src="./images/index7_di2_line.png" />
+                                <img  class="index3_di_pic " src="./images/index7_di2_pic.png" />
+                            </div>
+                        </div>
+                        <div class="index3_ren ">
+                            <div class="index3_inner ">
+                                <img class="index3_ren_pic " src="./images/index7_ren2_pic.png" />
+                                <img class="index3_ren_line " src="./images/index7_ren2_line.png" />
+                            </div>
+                        </div>
+                        <div class="index3_wu ">
+                            <div class="index3_inner ">
+                                <img class="index3_wu_line " src="./images/index7_wu2_line.png" />
+                                <img class="index3_wu_pic " src="./images/index7_wu2_pic.png" />
+                            </div>
+                        </div>
+                        <div class="index3_shi ">
+                            <div class="index3_inner ">
+                                <img class="index3_shi_pic " src="./images/index7_shi2_pic.png" />
+                                <img class="index3_shi_line " src="./images/index7_shi2_line.png" />
+                            </div>
+                        </div>
+                        <div class="index3_zuzhi ">
+                            <div class="index3_inner ">
+                                <img class="index3_zuzhi_pic " src="./images/index7_zuzhi2_pic.png" />
+                                <img class="index3_zuzhi_line " src="./images/index7_zuzhi2_line.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>                          
+            </div>
+            <div class="swiper-slide stop-swiping">
+                <div class="section  section5">    
+                    <img class="index4_logo " src="./images/sslogo@2x.png" />
+                    <div class="index4_info ">
+                        <div class="index4_info_pai "><img src="./images/index4_2a.png"/></div>
+                        <div class="index4_info_ditu ">
+                            <img src="./images/img9-ditu@2x.png" class="index4_ditu ">
+                            <div  class="index4_luxian ">
+                                <div class="index4_posi_re ">
+                                    <div class="index4_luxian_inner ">
+                                        <img src="./images/line2@a.png" class="index4_luxian1 " />
+                                    </div>
+                                    <div class="index4_luxian_inner2 ">
+                                        <img src="./images/lie.png" class="index4_luxian2 " />
+                                    </div>
+                                    <div class="index4_luxian_inner3 ">
+                                        <img src="./images/line2top.png" class="index4_luxian3 " />
+                                    </div>
+                                    <div class="index4_luxian_inner4 ">
+                                        <img src="./images/line2bot.png" class="index4_luxian4 " />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <span class="index_span1 ">甲地</span>
+                            <span class="index_span2 "></span>
+                            <span class="index_span3 ">乙地(毒源地)</span>
+                            <span class="index_span4 "></span>
+                        </div>
+                    </div>
+                    
+                    <div class="index4_foot2 ">  
+                    </div>
+                    <div class="index4_foot ">
+                        <div class="index4_foot_in ">
+                            <img src="./images/img9-haoguan2.png" class="index4_guanxi"/>
+                            <div class="index4_aa_aa " onclick="fa('a')">
+                                <div class="index4_aa_2  index3_a_scale">
+                                    <img src="./images/2a_in.png" class=" index4_aa "/>
+                                </div>
+                            </div>
+                            <div class="index4_bb_bb "  onclick="fb('b')">
+                                <div class="index4_bb_2 index3_a_scale">
+                                    <img src="./images/2b_in.png"  class="index4_bb "/>
+                                </div>
+                            </div>
+                            <div class="index4_cc_cc "  onclick="fc('c')" >
+                                <div class="index4_cc_2 index3_a_scale">
+                                    <img src="./images/2c_in.png" class="index4_cc "/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index_btns ">
+                        <div class="index_btns_in ">
+                            <div class="swiper-button-next "></div>
+                            <a href="javascript:void(0);" style="display:block;"><p>查看嫌疑人<br/>行为轨迹分析</p></a>
+                        </div>
+                    </div>
+                    <div class="index4_wenzi ">
+                        <ul class="index4_wenzi_ul1 ">
+                            <li class="index4_circles "></li>
+                            <li class="index4_wenzis ">请在SCOPA关联关系库中依次查看嫌疑人A、B、C行为轨迹</li>
+                            <div class="clear"></div>
+                        </ul>
+                        <ul>
+                            <li class="index4_circles "></li>
+                            <li class="index4_wenzis ">掌握三人动态后，点击查看嫌疑人行为轨迹分析</li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="swiper-slide">
+                <div class="section  section6" style="background-size:cover;background-repeat:no-repeat">
+                    <div class="index12_kuang ">
+                        <div class="index12_inner ">
+                            <div class="position_1 ">
+                            <p><b>嫌疑人的显性关联</b></p>
+                            <ul class="u1 ">
+                                <li class="l1"></li>
+                                <li class="l2">A与B存在显性关联</li>
+                            </ul>
+                            <ul class="u2 ">
+                                <li class="l1"></li>
+                                <li class="l2">B与C存在显性关联</li>
+                            </ul>
+                            <ul class="u2 ">
+                                <li class="l1"></li>
+                                <li class="l2">A与C无显性关联</li>
+                            </ul>
+                        </div>
+                        <div class="line "></div>
+                        <div class="position_2 ">
+                            <p><b>嫌疑人的行为轨迹分析</b></p>
+                            <ul class="u1 ">
+                                <li class="l1"></li>
+                                <li class="l2">A多次产生单边轨迹行为<br>（甲地→乙地，且无返程信息记录）</li>
+                            </ul>
+                            <ul class="u2 ">
+                                <li class="l1"></li>
+                                <li class="l2">C多次产生单边轨迹行为<br>（乙地→甲地，且无返程信息记录）</li>
+                            </ul>
+                            <ul class="u3 ">
+                                <li class="l1"></li>
+                                <li class="l2">B与C多次同行同往，关系密切</li>
+                            </ul>
+                            <ul class="u3 ">
+                                <li class="l1"></li>
+                                <li class="l2">A与C的行为轨迹拼接后与B的轨迹相似</li>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="position_2 ">
+                            <p><b>结论推测</b></p>
+                            <div class="wenzi ">C为A的身份洗白。综合A的涉毒案底，且乙地为<br>毒源地，推测可能为身份洗白的小型涉毒团伙，<br>建议提交刑侦部门进一步核查。</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="index12_button1  index12_button13">
+                        <div class="swiper-button-next "></div>
+                        <a href="javascript:void(0);">推送研判结果<br />至刑侦部门</a>
+                    </div>
+                    <div class="index12_button1  index12_button14">
+                        <div class="swiper-button-prev "></div>
+                        <a href="javascript:void(0);">重新查看<br />嫌疑人轨迹</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="section  section7" style="background-size:cover;background-repeat:no-repeat">    
+                    <img src="images/sslogo@2x.png"  class="index13_img "/>  
+                    <div class="index13_poi ">
+                        通过小张的智慧和<br />SCOPA的人工智能辅助，<br />妄想满天过海的嫌疑团伙原形毕露
+                    </div>
+                    <img src="images/jingche@2x.png" class="index13_car ">
+                    <div class="index13_two "></div>
+                    <div class="index13_three ">
+                        <p class="p1">明略数据中国公安领域<br />大数据利器SCOPA</p>
+                        <p class="p2">基于PB级全量数据进行<br />秒级运算的大数据情报分析和<br />实战综合平台</p>
+                        <p class="p2">解决公安情报分析三大课题<br />重大事件预警<br />重点人员管控<br />情报综合研判</p>
+                    </div>
+                    <div class="index13_to_next ">
+                        <a href="javascript:void(0);"></a>
+                        <span class="swiper-button-next "></span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="section  section9" style="background-size:cover;background-repeat:no-repeat">    
+                    <img src="./images/LOGO@2x.png" class="index15_logo "/>
+                    <p class="index15_one ">如果您希望体验大数据情报分析与研判，<br />请留下您的联系方式，我们会尽快与您联系</p>
+                    <div class="index15_button  index3_a_scale"><a href="javascript:void(0);">点击立刻行动<span class="swiper-button-next"></span></a></div>
+                    <div class="index15_line"></div>
+                    <p class="index15_two ">如果您有合作意向，<br />欢迎垂询明略数据专家热线<br />010-57152548<br />mkt@mininglamp.com</p>
+                    <ul class="index15_three ">
+                        <li class="l2"></li>
+                        <li class="l1">欢迎您关注明略数据官方微信<br />第一时间获取每日大数据资讯</li>
+                    </ul>
+                    <div class="index15_p">
+                        <p>明略数据官网：www.mininglamp.com</p>
+                    </div>
+                </div>               
+            </div>
+            <div class="swiper-slide">
+                <div class="section  section10" style="background-size:cover;background-repeat:no-repeat">   
+                    <img src="images/LOGO@2x.png" class="index15_logo " />
+                    <div class="index16_bg ">
+                        <p class="one">感谢您的关注，请填写以下信息，<br />我们会尽快与您联系。</p>
+                        <div class="two "></div>
+                        <div class="three " style="margin-top: 0.3rem;">
+                        <form name="" action="" method="post">
+                            <p>姓名：</p>
+                            <input type="text" value="必填" onfocus="fs(this)" name="username" class="uservals" />
+                        </div>
+                        <div class="three">
+                            <p>单位：</p>
+                            <input type="text" value="必填" onfocus="fs(this)" name="unit" class="danweivals" />
+                        </div>
+                        <div class="three">
+                            <p>部门：</p>
+                            <input type="text" name="department"/>
+                        </div>
+                        <div class="three">
+                            <p>职称：</p>
+                            <input type="text" name="jobname"/>
+                        </div>
+                        <div class="three">
+                            <p>电话：</p>
+                            <input type="text" value="必填" onfocus="fs(this)" name="phone" class="telvals" />
+                        </div>
+                        <div class="three">
+                            <p>邮箱：</p>
+                            <input type="text" name="email"/>
+                        </div>
+                        <div class="three">
+                            <p>留言：</p>
+                            <input type="text" name="remark"/>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="index16_four ">
+                        <div class="button " onclick="tijiao()">提&nbsp;&nbsp;交</div>
+                    </div>
+                    <ul class="index15_three ">
+                        <li class="l1">欢迎您关注明略数据官方微信<br />第一时间获取每日大数据资讯</li>
+                        <li class="l2"></li>
+                    </ul>
+                    <div class="alerts ">
+                        <div class="alerts_inner ">
+                            <p class="alerts_info"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+        $(function(){
+        swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        //effect: 'fade',
+        //spaceBetween: 30,
+        speed: 600,
+        noSwiping : true,
+        noSwipingClass : 'stop-swiping',
+        onSlideChangeStart: function(swiper){
+           var index= $(".swiper-slide-active").index()
+           if(index == 0){
+
+           }
+           if(index == 1){
+                //第一页动画效果 与启动页冲突 加个判断
+                showbtn();
+                //取消第二页动画效果
+                unshowbtn2();
+           }
+           if(index == 2){
+             //第一页取消动画效果
+                unshowbtn();
+                //第二页开始动画效果
+                showbtn2();
+                //取消第三页动画效果
+                unshowbtn3()
+           }
+           if(index == 3){
+                 //第三页动画效果
+               f2();
+               //取消第二页动画
+               unshowbtn2();
+
+           }
+           if(index == 4){
+                   //取消第三页动画效果
+                unshowbtn3();
+                //取消第五页 动画效果
+               disgetbg();
+            }
+           if(index == 5){
+                //第五页动画效果
+                getbg();
+                //取消小车动画效果
+                misxiaoche();                  
+           }
+           if(index == 6){
+                //取消第五页文字下拉效果
+                disgetbg();
+                //汽车动画
+                xiaoche();               
+           }
+           if(index == 7){
+                //取消小车动画效果
+                misxiaoche();              
+           }
+        }
+    });
+    fhide();
+    var w = window.screen.width;
+    var onloadnum = 1 ;
+    showbtn();
+    var UA = navigator.userAgent.toLowerCase();
+    if( UA.indexOf('baidu') > -1 || UA.indexOf('baiduboxapp') > -1 ){
+        var q = Math.ceil(parseInt($('.index4_info_pai').css('height')) * 0.536)+'px' ;
+        $('.index4_guanxi').css('top','1.5125rem');
+        $('.index4_aa_aa').css('top','4.5125rem');
+        $('.index4_bb_bb').css('top','5.05rem');
+        $('.index4_cc_cc').css('top','2.975rem');
+        $('.index4_info').css('top',q);
+        //$('.index12_kuang').css('margin-top','0.7rem')
+    }
+    if( UA.indexOf('sogou')>-1 ){
+        var q = Math.ceil(parseInt($('.index4_info_pai').css('height')) * 0.536)+'px' ;
+
+        $('.index4_guanxi').css('top','1.9125rem');
+        $('.index4_aa_aa').css('top','4.9125rem');
+        $('.index4_bb_bb').css('top','5.45rem');
+        $('.index4_cc_cc').css('top','3.375rem');
+        $('.index4_info').css('top','0.2rem');
+        $('.index13_three').css('top','6rem');
+        $('.section9 .index15_three').css('top','13rem');
+        //$('.index12_kuang').css('margin-top','0.7rem')
+    }
+
+    if( UA.indexOf('qqbrowser')>-1){
+        $('.index4_info').css('top','0.32rem')
+        }  
+
+   
+})  
+        window.onload = function(){
+            swiper.slideNext();
+        }
+</script>
+</body>
+</html>
